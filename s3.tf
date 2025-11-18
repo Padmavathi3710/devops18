@@ -23,3 +23,11 @@ status = "Enabled"
 }
 }
 
+terraform {
+backend "s3" {
+region = "eu-north-1"
+bucket = "padhu3710.monobucket"
+key = "prod/terraform.tfstate"
+}
+}
+
